@@ -1,0 +1,245 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-Strong-Cyan: hsl(171, 66%, 44%);
+    --primary-Light-Blue: hsl(233, 100%, 69%);
+
+    --neutral-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --neutral-Grayish-Blue: hsl(201, 11%, 66%);
+
+    --fw-regular:400;
+    --fw-semibold:600;
+
+    --heading-color:var(--neutral-Dark-Grayish-Blue);
+    --text-color:var(--neutral-Grayish-Blue);
+}
+img,svg,picture{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif !important;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+}
+/* -----start-hero-section--------- */
+.hero{
+    background: url('/images/bg-header-mobile.png') no-repeat ;
+    background-size: cover;
+    background-position: top;
+    padding: 2.4rem 1.25rem;
+}
+.logo{
+    margin: 1.9rem auto 2rem;
+}
+.text h1{
+    color: var(--heading-color);
+    font-weight: var(--fw-semibold);
+    font-size: 2.1rem;
+    margin-bottom: 0.6rem;
+}
+.text p{
+    font-size: 1.0625rem;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+.buttons .btn{
+    margin-block: 1.25rem 0;
+    font-weight: var(--fw-semibold);
+    padding-inline: 2rem;
+    padding-block: 0.8rem;
+    width: 18.75rem;
+    border: 3px solid ;
+    cursor: pointer;
+    border-top: none;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.buttons .btn:nth-child(1){
+    background-color: var(--primary-Strong-Cyan);
+    box-shadow: rgb(38, 186, 164,0.5) 0px 7px 29px 0px;
+    border-color: rgba(61, 155, 141, 0.962);
+}
+.buttons .btn:nth-child(2){
+    background-color: var(--primary-Light-Blue);
+    box-shadow: rgb(97, 115, 255,0.5) 0px 7px 29px 0px;
+    border-color:rgba(88, 106, 244, 0.962) ;
+}
+.buttons .btn:hover{
+    opacity: .7;
+}
+@media screen and (min-width:800px) {
+    .hero{
+        background: url('/images/bg-header-desktop.png') no-repeat !important;
+        background-size:cover !important;
+        background-position: center !important;
+    }
+    .text p{
+        font-size: 1.1rem;
+        width: 600px;
+    }
+    .buttons .btn{
+        width: 250px;
+    }
+}
+/* -----start-heading-commun--------- */
+.container{
+    padding: 2rem 1.25rem !important;
+    margin-block: 1rem 1rem;
+}
+.container .h2{
+    color: var(--heading-color);
+    font-weight: var(--fw-semibold);
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+.container p{
+    color: var(--text-color);
+    font-size: 1.0660rem;
+    line-height: 1.7;
+}
+@media screen and (min-width:800px){
+    .container p{
+        width: 650px;
+    }
+}
+/* -----end-heading-commun--------- */
+/* -------------start-track----section-------------- */
+.track{
+    padding: 2rem 1.25rem !important;
+    margin-block: 0 1rem !important;
+}
+.track .list .h3{
+    color: var(--heading-color);
+    font-weight: var(--fw-semibold);
+    font-size: 1.4rem;
+}
+.track .list p{
+    max-width: 400px;
+}
+@media screen and (min-width:800px){
+    .track .container {
+        gap: 2.5rem !important;
+    }
+    .track .list p{
+        font-size: 1.0625rem;   
+    }
+}
+/* -------------end-track----section-------------- */
+/* --------------start-access-section------------------- */
+.access{
+    padding: 2rem 1.25rem !important;
+    margin-block: 0 1rem !important;
+}
+/* --------------end-access-section------------------- */
+/* ---------start-workflow-section----------------------- */
+.workflow{
+    padding: 2rem 1.25rem !important;
+    margin-block: 0 1rem !important;
+}
+.workflow .text_with_icon {
+    margin-block: 1.5rem;
+}
+.workflow .text_with_icon img{
+    margin-block: 2rem !important;
+    width: 70px;
+}
+.workflow .text_with_icon h3{
+    color: var(--heading-color);
+    font-weight: var(--fw-semibold);
+    font-size: 1.4rem;
+    margin-block: 1.5rem;
+}
+.workflow .text_with_icon p{
+    max-width: 380px;
+}
+.logos{
+    margin-block-start: 44.8px;
+    margin-block-end: 2rem;
+    gap: 3.75rem;
+}
+@media screen and (min-width:800px){
+    .workflow .text_with_icon p{
+        max-width: 390px;
+        min-width: min-content;
+    }
+}
+/* ---------end-workflow-section----------------------- */
+.buttons-bottom{
+    padding: 1.5rem 1.25rem !important;
+    margin-block: 0 3rem !important;
+}
+/* ------------start-footer-section-------------------- */
+.footer{
+    padding: 2rem 1.25rem !important;
+    margin-block: 0 1rem !important;
+}
+.footer .container {
+    gap: 1.875rem;
+    padding-block: 1rem 1rem !important;
+}
+.footer .container img{
+    width: 5rem;
+    max-width: 7.5625rem;
+}
+.footer .container .menu{
+    margin-block: 1rem;
+}
+.footer .container .menu ul{
+    list-style-type: none;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+.footer .container .menu ul li{
+    margin-bottom: 1rem;
+}
+.footer .container .menu ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: var(--fw-semibold);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.footer .container .menu ul li a:hover{
+    color: var(--primary-Strong-Cyan);
+}
+.footer .container .icons{
+    gap: 2.5rem;
+}
+.footer .container .icons a{
+    color: var(--heading-color);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.footer .container .icons a i{
+    font-size: 2rem;
+}
+.footer .container .icons a:hover{
+    color: var(--primary-Strong-Cyan);
+}
+@media screen and (min-width:992px){
+    .footer .container {
+        gap: 5rem;
+        flex-wrap: wrap !important;
+    }
+    .footer .container .menu{
+        gap: 7rem;
+        flex: 1;
+        justify-content: flex-start !important;
+    }
+}
+/* ------------end-footer-section-------------------- */
